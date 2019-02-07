@@ -33,6 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 id="header">Welcome to Koinalysis!!!!</h1>
+        <h1 id="header">Team App</h1>
         {Object.keys(this.state.cryptos).map((key) => (
           <div id="crypto-data">
             <span className="left">{key}</span>
