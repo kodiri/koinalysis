@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import AppLayout from './AppLayout';
+import AppBar from './AppBar';
 import axios from 'axios';
+import PriceBox from './PriceBox';
 var NumberFormat = require('react-number-format');
 
 class App extends Component {
@@ -31,22 +34,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 id="header">Welcome to Koinalysis!!!!</h1>
-        <h1 id="header">Team App</h1>
-        {Object.keys(this.state.cryptos).map((key) => (
-          <div id="crypto-data">
-            <span className="left">{key}</span>
-            <span className="right"><NumberFormat 
-              value={this.state.cryptos[key].USD} 
-              displayType={'text'} decimalPrecision={2} 
-              thousandSeparator={true} prefix={'$'} />
-            </span>
-          </div>
-        ))}
-        <div>
-          
-        </div>
+      <div class="wrapper">
+        <AppLayout>
+          <AppBar />
+          <PriceBox>
+            {Object.keys(this.state.cryptos).map((key) => (
+              <div id="crypto-data">
+                <span className="left">{key}</span>
+                <span className="right"><NumberFormat
+                  value={this.state.cryptos[key].USD}
+                  displayType={'text'} decimalPrecision={2}
+                  thousandSeparator={true} prefix={'$'} />
+                </span>
+              </div>
+            ))}
+          </PriceBox>
+        </AppLayout>
       </div>
     );
   }
