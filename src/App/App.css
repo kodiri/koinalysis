@@ -1,9 +1,15 @@
 body {
   font-family: 'Do Hyeon', sans-serif;
-  background-color: #f1f1f1;
   color: white;
-  position: relative;
-  background: url(
-    https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?cs=srgb&dl=bank-bitcoin-business-844124.jpg&fm=jpg) no-repeat center center/cover;
+  background-color: black;
    }
 
+.Background {
+    padding-top: 100px;
+    background: url("../img/crypto_coins.jpg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 1000px;
+  }
+  
+  

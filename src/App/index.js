@@ -34,23 +34,23 @@ class App extends Component {
 
   render() {
     return (
-      <div class="wrapper">
-        <AppLayout>
-          <AppBar />
-          <PriceBox>
-            {Object.keys(this.state.cryptos).map((key) => (
-              <div id="crypto-data">
-                <span className="left">{key}</span>
-                <span className="right"><NumberFormat
-                  value={this.state.cryptos[key].USD}
-                  displayType={'text'} decimalPrecision={2}
-                  thousandSeparator={true} prefix={'$'} />
-                </span>
-              </div>
-            ))}
-          </PriceBox>
-        </AppLayout>
-      </div>
+      <AppLayout>
+        <AppBar />
+        <div className="Background">
+        <PriceBox>
+          {Object.keys(this.state.cryptos).map((key) => (
+            <div id="crypto-data">
+              <span className="left">{key}</span>
+              <span className="right"><NumberFormat
+                value={this.state.cryptos[key].USD}
+                displayType={'text'} decimalPrecision={2}
+                thousandSeparator={true} prefix={'$'} />
+              </span>
+            </div>
+          ))}
+        </PriceBox>
+          </div>
+      </AppLayout >
     );
   }
 }

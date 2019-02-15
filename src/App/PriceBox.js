@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`
     background:white;
-    opacity: 0.8;
+    
     border-radius: 25px;
     line-height: 2;
     width: 70%;
