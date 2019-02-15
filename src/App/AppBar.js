@@ -2,12 +2,12 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 const Logo = styled.div`
-font-size: 1.25em;
+font-size: 1.9em;
 `
 
 const Bar = styled.div`
 display: grid;
-grid-template-columns: 180px auto 90px 75px 50px;
+grid-template-columns: 1fr 2fr 90px 75px 50px;
 margin-bottom: 40px;
 `
 
