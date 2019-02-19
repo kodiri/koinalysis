@@ -1,0 +1,22 @@
+.navigation-link {
+    display: grid;
+    grid-template-columns: reapeat(auto-fit, minmax(350px,1fr));
+    justify-content: right;
+    margin: 10px;
+    padding: 3%;
+    height: 70px;
+    font-family: Arial;
+    color: rgb(241, 174, 120);
+  }
+  .navigation-link a:hover {
+    background-color: #555;
+    color: rgb(241, 174, 120);
+  }
+  
+  .navigation-link a {
+    display: block;
+    color: rgb(131, 128, 128);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
