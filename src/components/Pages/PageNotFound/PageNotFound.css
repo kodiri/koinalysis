@@ -1,0 +1,26 @@
+.textbox-title{
+    flex: 2;
+    font-family: Arial;
+    color: rgb(2, 103, 204);
+    font-size: xx-large;
+    font-style: oblique <angle>;
+    
+}
+
+.textbox-main {
+    flex: 2;
+    font-size: large;
+    font-family: Arial;
+    color: rgb(73, 153, 233);
+    font-style: oblique <angle>;
+    padding: -10%;
+}
+
+.textbox-sub{
+    flex: 2;
+    font-size: medium;
+    font-family: Arial;
+    color: #005CB9;
+    font-style: oblique <angle>;
+    padding: 2%;
+}
