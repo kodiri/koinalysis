@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+    background-color: rgb(46, 45, 44);
+  }
+  
+  body{
+    background-color: rgb(46, 45, 44);
+  }
+  
+  img{
+    width: 51%;
+    
+  } 
+  
+  
